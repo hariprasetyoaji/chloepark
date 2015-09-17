@@ -4,14 +4,14 @@ html, body {
   height: 100%;
 }
 
-.container {
+.homepage {
   height: 100%;
   width: 100%;
   position: relative;
   background: rgb(143, 143, 135);
 }
 
-.container__background {
+.homepage__background {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -25,11 +25,11 @@ html, body {
   transition-timing-function: ease-in;
 }
 
-.container__buffer--ready + .container__background {
+.homepage__buffer--ready + .homepage__background {
   opacity: 1;
 }
 
-.container__buffer {
+.homepage__buffer {
   position: absolute;
   top:-99999px;
 }
