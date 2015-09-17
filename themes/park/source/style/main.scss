@@ -1,2 +1,35 @@
-body {
+@import "vendor/normalize";
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgb(143, 143, 135);
+}
+
+.container__background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background: center no-repeat url('/images/splash.png');
+  background-size: cover;
+  transition-property: opacity;
+  transition-duration: .5s;
+  transition-timing-function: ease-in;
+}
+
+.container__buffer--ready + .container__background {
+  opacity: 1;
+}
+
+.container__buffer {
+  position: absolute;
+  top:-99999px;
 }
