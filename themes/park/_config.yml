@@ -2,3 +2,15 @@ node_sass:
   outputStyle: nested
   precision: 5
   sourceComments: false
+
+bourbon:
+  outputStyle: nested
+  precision: 8
+  imagePath: images
+  sourceComments: none
+  indentedSyntax: false
+  omitSourceMapUrl: false
+  sourceMap: false
+  outFile: ''
+  sourceMapEmbed: false
+  sourceMapContents: false
