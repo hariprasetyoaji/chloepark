@@ -48,7 +48,7 @@ a {
   left: 0;
   right: 0;
   opacity: 0;
-  background: center no-repeat url('/images/splash.png');
+  background: center no-repeat url('../images/splash.png');
   background-size: cover;
   @include transition(opacity .5s cubic-bezier(.33,0,.2,1) 0s);
   z-index: 1;
