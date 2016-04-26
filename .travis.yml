@@ -1,8 +1,13 @@
+language: node_js
+node_js:
+- "4.2"
 before_script:
 - git config --global user.name 'Nico Taing via Travis CI'
 - git config --global user.email 'nico.taing@gmail.com'
 - sed -i'' "s~git@github.com:nicotaing/chloepark.git~https://${GH_TOKEN}:x-oauth-basic@github.com/nicotaing/chloepark.git~"
   _config.yml
+install:
+  - npm install
 script:
 - hexo deploy --silent
 env:
