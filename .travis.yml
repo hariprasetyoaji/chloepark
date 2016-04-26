@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-- "4.2"
+- '4.2'
 before_script:
 - git config --global user.name 'Nico Taing via Travis CI'
 - git config --global user.email 'nico.taing@gmail.com'
 - sed -i'' "s~git@github.com:nicotaing/chloepark.git~https://${GH_TOKEN}:x-oauth-basic@github.com/nicotaing/chloepark.git~"
   _config.yml
 install:
-  - npm install
+- npm install
 script:
-- hexo deploy 
+- hexo deploy --silent
 env:
   global:
-    secure: Rr6Fg1O7x9x4du34finh+o9+diHmCEtkqS+IwcxK8ygarKFMRas/CDGh4KxfQ2EeNAkHuLj8u73YJrKwLjfDltQfw6sCAcvNsbZuDtoFtIFT8NKAIA3ucc7uZYFVNTy2kv9PujZIk1T4cCtmfDBOYRWk4qp8moDzlcHbNzfahzrcrPpDci3ZsV/7PumE/VJV3WcA1xhJH2u7MUuO9DZjq8PSfH4cm5eOk5zRpRt0rWPAaPb0YF3HtZ8B3FWMMCHonjntcmwsuzAnam9CK9oym1mpKX+4DFUojoniPAcYV7E0sQCEwhxkdI/+dm7Rdi2DrwL1a+1Ao3xkmyhpsFr/I5Mp6O2h85cUeJ1v9zrVj3sGDGQO9LGghALVCvfoNNnzgMMiAP+fu2QjoijJv7h860bhQlWTeyKZvBAF18MD80JlPDnUmeG4ee8Fw8I/8GzKyWP9HrqH0FHGbOgFMvt2QQuAsXxY1r9GZTjMdIcnzfL3rj/8rxM9litwaAjrgGaCDD6B+VhLaHayCD7rYNJZRVCiZ7zsxNelm8MzbgOpiO7R2BYhWTCHLMjLJl7Ypce9MzpJNC7NrLq/HNyR0oCIBBNtvMlZ09dE4ZzdEFydY3KRDmhTTPrZsaYSBgdApGp2UUQaY5SHvS8O1ak66GmO7lEJmeiZjdfv70ybGq1jDuM=
+  - secure: YbPzrA5gYp1y6ntw2IdxYVtomjthlNjUyZTl5DrZt/PEptCuWngszGBGx331nhCJsRMun/OOUIZB/o2uDcJu/JY98NMrjJZhbd9FI4/9/f3Kpq9NDg1NNIvmfaA7OA8gpGbIz0K/7nTPgsFj9Vf2qX+dwwphlF5KLYPhXga4zmX4Lhk8Zv87yY38ZlFd9Revk6dpeb8pVp3r34HAEryaxrEa6sToP7iKoPmCoVfU1UniSw+5oK7AkZbyugvEi9Xd0/rhpas8x1uyOYQY2+gdSIamAYnJZQXfTF3GRSqLDRDvORFeIr11xDfyY3LWP9MS0scGUP360AsAC57tp+y+44LtkoK4nl5frl8Snw5XFs1hqgfy2bb/8L28K2nYIg/8GJDi1H2F6ZQBNPdP32L9/ao2nBKTW/3SZ27GJCDwnK771iEFjVaHvsV8SUKTiyIiubyfT+wGpvg2SuAEpSGTXON0HM2r2lUIfO3lvsXeYg2RoBOIZMUIGXsIYR4GJyps7a2yQ6MRldMeHAVMa86rOkR6428eARa4meh7ag6Hyd43VWnweHz6bUUyoZfnY+8fjHjT/uZIaxTdR9NgIZRjSLUJv19euK/5DFOzhHYxhYXEVNZed5mvkbdSlh6/c9AdZN79kFSbQgM/DcXegjUBflsktGQFmtkQOAhD9ZLbSA4=
