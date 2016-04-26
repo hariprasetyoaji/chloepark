@@ -81,14 +81,19 @@ a {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  min-height: contain-floats;
 }
 
 .homepage__social-link {
   float: left;
-  margin-right: 10px;
+  padding-right: 10px;
+  @include transition(opacity .4s ease-in-out 0s);
+  opacity: 1;
 
   &:last-child {
-    margin-right: 0;
+    padding-right: 0;
   }
+}
+
+.homepage__social-link--transparent {
+  opacity: .5;
 }
