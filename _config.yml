@@ -68,4 +68,6 @@ theme: park
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo:
+    github: git@github.com:nicotaing/chloepark.git,gh-pages
